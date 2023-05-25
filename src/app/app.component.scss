@@ -1,0 +1,164 @@
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+
+  header {
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; 
+    height: 60px;
+  }
+
+  .sub-div1 {
+    width: 50%;
+ 
+    background-image: url("../assets/jung.jpg");
+    background-repeat: no-repeat;
+  }
+  .sub-div2 {
+    width: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    font-size: 13px;
+  }
+  .sub-div3 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    gap: 20px;
+    font-size: 14px;
+    color: rgb(228, 228, 228);
+    font-weight: 500;
+
+  }
+
+  .outer-div {
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    height: 60px;
+  }
+  
+  .inner-div {
+    width: 80%;
+    display: flex;
+  }
+  
+  .left h1,
+  .right h1 {
+    margin: 0;
+    font-size: 2rem;
+    
+  }
+
+  .footer {
+    background-color: lightgray;
+    padding: 5px;
+    text-align: center;
+  }
+  
+  .left {
+    width: 50%;
+    background-image: url("../assets/jung.jpg");
+    background-repeat: no-repeat;
+  }
+
+  .timer-container{
+    width: 80%;
+    background-color: rgb(255, 255, 255);
+
+    display: flex;
+    margin: 0 auto;
+    align-items: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: space-between;
+   
+}
+  
+  .right {
+    width: 50%;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .table-container {
+    background-color: white;
+    max-width: 800px; /* change this value to adjust the width */
+    margin: 0 auto;
+  }
+
+  .container {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+  .container2 {
+    
+  
+  }
+
+
+  .dialog {
+    display: none;
+    position: fixed;
+    background-image: url("../assets/background.jpg");
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 2);
+    padding: 20px;
+    border: 1px solid #adadad;
+    width: 70%;
+    height: 70%;
+    z-index: 99;
+
+    border-radius: 8px; /* Add rounded corners */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Add drop shadow */
+  }
+  
+
+  .dialog-link {
+    margin-right: 10px;
+
+
+    cursor: pointer;
+  }
+
+  .dialog-link:hover{
+    color: rgb(194, 194, 194);
+  }
+
+
+  .centered-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+  .centered-text {
+    text-align: center;
+  }
+

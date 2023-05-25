@@ -1,0 +1,21 @@
+
+
+  :host {
+    display: flex;
+    justify-content: right;
+    align-items: right;
+
+  }
+
+  .timer-container{
+      width: 80%;
+      text-align: left;
+      display: flex;
+      margin: 10px
+  }
+  
+  .timer {
+    font-size: 2rem;
+    text-align: center;
+    padding: 8px;
+  }
