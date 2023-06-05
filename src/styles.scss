@@ -53,6 +53,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     box-shadow: 0 0 5px #6cb2eb;
   }
 
+
+
+  .mat-expansion-panel {
+    box-shadow: none!important;
+}
+
   #sec{
     width: 90%;
   }

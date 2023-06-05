@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SnakWarnComponent } from './components/snak-warn/snak-warn.component';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { LayoutModule } from '@angular/cdk/layout';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { LayoutModule } from '@angular/cdk/layout';
     MatButtonModule,
     HttpClientModule,
     MatSnackBarModule,
-    LayoutModule
+    LayoutModule,
+    MatExpansionModule
     
   ],
   providers: [],

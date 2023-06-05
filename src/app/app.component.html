@@ -95,17 +95,16 @@
     </div>
   </div>
 
-  <div id="how-to-dialog" class="dialog" style="text-align: justify">
+  <div id="how-to-dialog" class="dialog" style="text-align: justify; text-align: justify; overflow: scroll;">
     <h2>How to perform a test</h2>
     <p style="font-size: 13.5px;">
       To perform the Jungian association method or word association test, you can
       follow these steps:
     </p>
-    <p style="font-size: 13.5px; line-height: 1.4">
+    <p style="font-size: 13.5px; line-height: 1.5">
       1. <b>Preparation:</b> Prepare a list of words that will be used during the
-      test. These words should be relatively neutral and not trigger extreme
-      emotional reactions. It's often recommended to use a standardized set of
-      words to ensure consistency. <br />
+      test. These words are relatively neutral and do not trigger extreme
+      emotional reactions. <br />
       2. <b>Setting:</b> Find a quiet and comfortable environment where the
       individual can focus without distractions. Ensure privacy and create a safe
       space for open expression. <br />
@@ -128,8 +127,8 @@
       connections between the presented word and the individual's response.
       Consider both the content of the responses and the timing or hesitations in
       their reactions. <br />
-      8. <b>Interpretation:</b> Interpretation of the results requires knowledge
-      and expertise in Jungian psychology or psychoanalysis. Analyze the responses
+      8. <b>Interpretation:</b>Interpretation of the results requires knowledge
+      and expertise in Jungian psychology or psychoanalysis or you can do it on your own, but probably with less accuracy. Analyze the responses
       to gain insights into the individual's unconscious thoughts, emotions,
       conflicts, or underlying psychological dynamics. These insights can be
       valuable for therapeutic purposes.
@@ -147,8 +146,6 @@
     </p>
 
     <br>
-    <br>
-    
     <div style="display: flex; justify-content: center">
       <button style="align-self: center" mat-stroked-button color="primary" class="dialog-close-button">
         Close
@@ -156,6 +153,7 @@
     </div>
   </div>
 
+  
   <div class="timer-container">
     <div>
       <button [disabled]="isBtnGenerateDisabled" mat-stroked-button color="warn" style="margin-right: 5px"
@@ -197,10 +195,20 @@
     </table>
   </div>
   <br />
+
+
+
+
   <div class="container">
     <button mat-raised-button color="primary" (click)="generatePDF()">
       Generate PDF
     </button>
+   
+  </div>
+  <div class="container">
+    <ng-container *ngIf="isPDFGenerated" >
+      <p style="color: rgb(63 81 181);">Thank you for completing the test, consider completing this short survery  <b><a href="https://strawpoll.com/polls/GJn47pz63yz" style="color: rgb(48, 61, 134);">survery</a></b> </p>
+    </ng-container>
   </div>
   <br />
 
